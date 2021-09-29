@@ -1,0 +1,24 @@
+apiVersion: backstage.io/v1alpha1
+kind: Template
+metadata:
+  name: node
+  title: node
+  description: node
+spec:
+  owner: sfarias051@gmail.com
+  template: cookiecutter
+  type: service
+  schema:
+    path: .
+    required:
+     - project_name
+     - project_description
+    properties:
+      project_name:
+        title: Project Name
+        type: string
+        description: Project Name
+      project_description:
+        title: Project Description
+        type: string
+        description: Project Description
